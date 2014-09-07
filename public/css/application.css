@@ -14,12 +14,79 @@
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   /*width: 600px;*/
   padding: 20px;
   border: 1px dotted black;
   background-color: white;
   opacity: 0.9;
+  position: relative;
+  top: 128px;
+  border-radius: 10px;
+  /*font-size: 36px;*/
+}
+
+/*Links*/
+a {
+  color: black;
+}
+
+a:visited {
+  color: darkblue;
+}
+
+a:hover {
+  color: aliceblue;
+}
+
+/*Top Bar */
+header {
+  width: 100%;
+}
+
+header #header-background {
+  width: 100%;
+  height: 80px;
+  background-color: darkblue;
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+}
+
+header a:link {
+  color: white;
+}
+
+header a:visited {
+  color: white;
+}
+
+header a:hover {
+  color: darkblue;
+}
+
+#header-text {
+  width: 100%;
+  position: fixed;
+}
+
+#title {
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+}
+
+#user {
+  text-align: right;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -56px;
+  padding: 8px 16px 8px 16px;
+  margin-right: 24px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 8px;
 }
 
 /*Other Stuff */

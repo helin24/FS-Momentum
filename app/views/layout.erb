@@ -20,7 +20,16 @@
 </head>
 <body>
   <header>
-      <h1><a href="/">FS-Momentum</a></h1>
+    <div id="header-background"></div> 
+    <div id="header-text">
+      <div id="title">
+        <h1><a href="/">FS-Momentum</a></h1>
+      </div>
+
+      <div id="user">
+        <%= current_user.email if current_user %>
+      </div>
+    </div>
   </header>
 
   <div id="background"><img src="/../images/winter.jpg"></div>
