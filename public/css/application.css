@@ -70,7 +70,7 @@ header a:visited {
 }
 
 header a:hover {
-  color: darkblue;
+  color: rgb(143, 179, 224);
 }
 
 #header-text {
