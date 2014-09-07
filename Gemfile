@@ -14,6 +14,9 @@ gem 'thin'
 gem 'activesupport', '~>4.1'
 gem 'activerecord', '~>4.1'
 
+gem 'carrierwave'
+gem 'mini_magick'
+
 gem 'rake'
 
 gem 'shotgun'

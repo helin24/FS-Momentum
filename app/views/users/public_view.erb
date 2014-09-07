@@ -1,2 +1,3 @@
 This user is <%= @user.name %><br>
-About: <%= @user.about %>
+About: <%= @user.about %><br>
+<img src="<%= @user.photos.first.file.url if @user.photos != [] %>">
