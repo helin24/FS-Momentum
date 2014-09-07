@@ -12,7 +12,9 @@ post '/users/create' do # post creating user account
   if email && password && matched_password
     new_user = User.create(params[:user])
     new_user.skills << Skill.all
-  else
+    photo = Photo.create(file: params[:filename])
+    photo.user = new_user
+    photo.save
   end
   redirect '/users/login'
 end

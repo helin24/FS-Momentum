@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :skills, through: :skills_users
   has_many :notes
   has_many :skills_users
+  has_many :photos
 
   validates :email, :password, presence: true
 
