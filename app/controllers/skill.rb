@@ -21,3 +21,9 @@ post '/skill/:id' do
   end
 end
 
+delete '/skill/:id' do
+  if request.xhr? # how to do this erb with link instead of submit form?
+    note = Note.find(params[:note_id])
+    note.destroy
+  end
+end

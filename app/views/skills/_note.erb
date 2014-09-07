@@ -1,3 +1,3 @@
-<li><%= n.text %> </li>
-<form action="/skill/:id" method="post">
-</form>
+<li>
+  <%= n.text %> <a href="/skill/<%= n.skill.id %>" class="delete" id="<%= n.id %>">(Delete)</a>
+</li>

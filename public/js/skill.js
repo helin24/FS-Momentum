@@ -9,4 +9,18 @@ $(document).ready(function() {
       $("#private-notes").append(response)
     })
   })
+
+  $(".delete").on("click", function(event) {
+    event.preventDefault();
+    var action = $(this).attr("href");
+    var method = "delete";
+    var data = "note_id=" + $(this).attr("id");
+    var deleted_element = $(this).parent()
+    // debugger;
+    var request = $.ajax(action, {"method": method, "data": data});
+    request.done(function() {
+      deleted_element.remove();
+    })
+  })
+
 });
