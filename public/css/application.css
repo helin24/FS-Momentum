@@ -1,0 +1,23 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+h1 {
+  font-color: green;
+  border: 2px solid black;
+}
+
+/*body {
+  background-image: url('lake.jpg');
+}*/
+
+div#main {
+  width: 600px;
+  border: 1px dotted grey;
+}

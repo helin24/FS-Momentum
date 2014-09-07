@@ -1,0 +1,6 @@
+<form action = "/home" method="post">
+	<ul><% @all_levels.each do |level| %>
+    <li><a href='/level/<%= level.id %>'><%= level.level %></a></li>
+    <% end %>
+  </ul>
+</form>

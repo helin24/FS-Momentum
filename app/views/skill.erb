@@ -1,0 +1,19 @@
+<h1><%= @skill.name %></h1>
+<ul>Your notes:
+  <% @private_notes.each do |n| %>
+  <li><%= n.text %> </li>
+  <% end %>
+</ul>
+<ul>Other notes:
+  <% @public_notes.each do |n| %>
+  <li><%= n.text %> (from <a href="/users/show/<%= n.user.id %>"><%= n.user.email %></a>)</li>
+  <% end %>
+</ul>
+
+<br>
+<form action="/skill/<%= @skill.id %>" method="post">
+  <input type="text" name="instructions" value="" placeholder="Note">
+  <input type="checkbox" name="public" value="true">Make note public
+  <input type="submit" value="Add note">
+</form>
+
