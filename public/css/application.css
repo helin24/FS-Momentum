@@ -1,23 +1,97 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+/*Background*/
+#background {
+  width: 100%;
 }
+
+#background img {
+  min-width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: -100px;
+}
+
+/*Main Container */
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  /*width: 600px;*/
+  padding: 20px;
+  border: 1px dotted black;
+  background-color: white;
+  opacity: 0.9;
+  position: relative;
+  top: 128px;
+  border-radius: 10px;
+  /*font-size: 36px;*/
+}
+
+/*Links*/
+a {
+  color: black;
+}
+
+a:visited {
+  color: darkblue;
+}
+
+a:hover {
+  color: aliceblue;
+}
+
+/*Top Bar */
+header {
+  width: 100%;
+}
+
+header #header-background {
+  width: 100%;
+  height: 80px;
+  background-color: darkblue;
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+}
+
+header a:link {
+  color: white;
+}
+
+header a:visited {
+  color: white;
+}
+
+header a:hover {
+  color: darkblue;
+}
+
+#header-text {
+  width: 100%;
+  position: fixed;
+}
+
+#title {
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+}
+
+#user {
+  text-align: right;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -56px;
+  padding: 8px 16px 8px 16px;
+  margin-right: 24px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 8px;
+}
+
+/*Other Stuff */
+
 th {
   text-align: left;
 }
 
-h1 {
-  font-color: green;
-  border: 2px solid black;
-}
-
-/*body {
-  background-image: url('lake.jpg');
-}*/
-
-div#main {
-  width: 600px;
-  border: 1px dotted grey;
-}
