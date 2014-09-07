@@ -13,6 +13,17 @@ post '/skill/:id' do
   note.user = User.find(session[:user_id])
   note.skill = Skill.find(params[:id])
   note.save
-  redirect "skill/#{params[:id]}"
+  if request.xhr?
+    n = note
+    erb :'/skills/_note', layout: false, locals: {n: n}
+  else
+    redirect "skill/#{params[:id]}"
+  end
 end
 
+delete '/skill/:id' do
+  if request.xhr? # how to do this erb with link instead of submit form?
+    note = Note.find(params[:note_id])
+    note.destroy
+  end
+end
