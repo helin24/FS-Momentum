@@ -23,6 +23,7 @@
   position: relative;
   top: 128px;
   border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
   /*font-size: 36px;*/
 }
 
@@ -74,6 +75,9 @@ header a:hover {
   margin: 0 auto;
   width: 250px;
   text-align: center;
+  font-family: 'Alex Brush', cursive;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 #user {
@@ -81,7 +85,7 @@ header a:hover {
   display: inline-block;
   float: right;
   position: relative;
-  top: -56px;
+  top: -72px;
   padding: 8px 16px 8px 16px;
   margin-right: 24px;
   background-color: white;
