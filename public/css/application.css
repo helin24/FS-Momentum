@@ -14,8 +14,8 @@
 
 .container {
   margin: 0 auto;
+  margin-bottom: 40px;
   width: 90%;
-  /*width: 600px;*/
   padding: 20px;
   border: 1px dotted black;
   background-color: white;
@@ -25,7 +25,6 @@
   border-radius: 10px;
   font-family: 'Josefin Sans', sans-serif;
   z-index: 1;
-  /*font-size: 36px;*/
 }
 
 /*Links*/
@@ -111,6 +110,62 @@ header i {
   top: -75px;
   display: inline-block;
   margin-right: 16px;
+}
+
+/*Levels List*/
+
+ul#levels-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+li.level-info {
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  border-bottom: 1px solid lightgrey;
+}
+
+li.level-info div {
+  display: inline-block;
+}
+
+li.level-info:first-child {
+  border-top: 1px solid lightgrey;
+}
+
+div.level-name {
+  width: 15%;
+}
+
+div.level-percent {
+  width: 5%;
+}
+
+div.level-bar {
+  width: 75%;
+}
+
+progress::-webkit-progress-bar {
+  background: #EEE;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+  border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #green;
+  border-radius: 3px;
+}
+
+progress {
+  background: #EEE;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+  border-radius: 3px;
+  width: 100%;
+}
+
+progress::-moz-progress-bar {
+  background-color: #CC0000;
+  border-radius: 3px;
 }
 
 /*Skill List*/
