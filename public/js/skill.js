@@ -12,6 +12,7 @@ $(document).ready(function() {
 
   $(".delete").on("click", function(event) {
     event.preventDefault();
+    
     var action = $(this).attr("href");
     var method = "delete";
     var data = "note_id=" + $(this).attr("id");

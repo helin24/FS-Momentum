@@ -1,0 +1,6 @@
+<h1><%= @level.level %></h1>
+<ul>
+  <% @skills.each do |s| %>
+  <li><a href='/skill/<%= s.id %>'><%= s.name %> </a></li>
+  <% end %>
+</ul>
