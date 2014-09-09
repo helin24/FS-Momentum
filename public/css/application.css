@@ -14,6 +14,7 @@
 
 .container {
   margin: 0 auto;
+  margin-bottom: 40px;
   width: 90%;
   /*width: 600px;*/
   padding: 20px;
@@ -111,6 +112,27 @@ header i {
   top: -75px;
   display: inline-block;
   margin-right: 16px;
+}
+
+/*Levels List*/
+
+ul#levels-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+li.level-info {
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  border-bottom: 1px solid lightgrey;
+}
+
+li.level-info:first-child {
+  border-top: 1px solid lightgrey;
+}
+
+div.level-name {
+  width: 20%;
 }
 
 /*Skill List*/

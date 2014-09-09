@@ -2,9 +2,16 @@ Name: <%= @user.name %><br>
 About: <%= @user.about %><br>
 Joined: <%= @user.created_at %><br><br>
 
-My progress:
-<ul><% @all_levels.each do |level| %>
-  <li><a href='/level/<%= level.id %>'><%= level.level %></a></li>
+<h3>My progress:</h3>
+<ul id="levels-list"><% @all_levels.each do |level| %>
+  <li class="level-info">
+  	<div class="level-name">
+  		<a href='/level/<%= level.id %>'><%= level.level %></a>
+  	</div>
+  	<div class="level-bar">
+  		<!-- Put progress marker here -->
+  	</div>
+  	</li>
   <% end %>
 </ul>
 
