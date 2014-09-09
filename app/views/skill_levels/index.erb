@@ -1,6 +1,18 @@
 <h1><%= @level.level %></h1>
-<ul>
+
+<form method="post" action="<%= @level.id %>">
+<input type="hidden" name="_method" value="put">
+
+<ul id="skills-list">
   <% @skills.each do |s| %>
-  <li><a href='/skill/<%= s.id %>'><%= s.name %> </a></li>
+  <li>
+		  <label for="points" id="skill-progress">
+  			<a href='/skill/<%= s.id %>'><%= s.name %> </a>
+  		</label>
+		  <input type="range" name="skill-progress[<%= s.id %>]" id="skill-progress" value="<%= s.skills_users.find_by(user_id: current_user).skill_progress %>" min="0" max="3">
+  </li>
   <% end %>
 </ul>
+
+<input type="submit" value="Edit">
+</form>

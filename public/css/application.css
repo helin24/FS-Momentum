@@ -30,7 +30,7 @@
 
 /*Links*/
 a:link {
-  color: black;
+  color: darkblue;
   text-decoration: none;
 }
 
@@ -39,11 +39,11 @@ a:visited {
 }
 
 a:hover {
-  color: aliceblue;
+  color: grey;
 }
 
 li a:link {
-  color: grey;
+  color: darkblue;
 }
 
 /*Top Bar */
@@ -111,6 +111,13 @@ header i {
   top: -75px;
   display: inline-block;
   margin-right: 16px;
+}
+
+/*Skill List*/
+
+ul#skills-list {
+  list-style: none;
+  padding-left: 0;
 }
 
 /*Other Stuff */
