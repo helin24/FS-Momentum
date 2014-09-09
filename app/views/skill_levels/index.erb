@@ -1,0 +1,32 @@
+<h1><%= @level.level %></h1>
+
+<form method="post" action="<%= @level.id %>">
+<input type="hidden" name="_method" value="put">
+
+<datalist id="progress-marks">
+	<option>0</option>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+</datalist>
+
+<div id="progress-labels">
+	<div class="skill-label">Specific Skills</div>
+	<div class="progress-marker">Doable</div>
+	<div class="progress-marker">Reliable</div>
+	<div class="progress-marker">Refined</div>
+</div>
+
+<ul id="skills-list">
+  <% @skills.each do |s| %>
+  <li>
+		  <label for="points" id="skill-progress">
+  			<a href='/skill/<%= s.id %>'><%= s.name %> </a>
+  		</label>
+		  <input type="range" name="skill_progress[<%= s.id %>]" id="skill-progress" value="<%= s.skills_users.find_by(user_id: current_user).skill_progress %>" min="0" max="3" list="progress-marks">
+  </li>
+  <% end %>
+</ul>
+
+<input type="submit" value="Edit">
+</form>

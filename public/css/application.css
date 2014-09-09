@@ -30,7 +30,7 @@
 
 /*Links*/
 a:link {
-  color: black;
+  color: darkblue;
   text-decoration: none;
 }
 
@@ -39,11 +39,11 @@ a:visited {
 }
 
 a:hover {
-  color: aliceblue;
+  color: grey;
 }
 
 li a:link {
-  color: grey;
+  color: darkblue;
 }
 
 /*Top Bar */
@@ -111,6 +111,40 @@ header i {
   top: -75px;
   display: inline-block;
   margin-right: 16px;
+}
+
+/*Skill List*/
+
+ul#skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+label#skill-progress {
+  padding: 0.5em;
+  display: inline-block;
+  width: 20%;
+}
+
+input#skill-progress {
+  width: 70%;
+}
+
+div#progress-labels {
+  border-bottom: 1px solid black;
+  padding: 0.5em;
+}
+
+div#progress-labels .skill-label {
+  display: inline-block;
+  font-size: 20px;
+  width: 22%;
+}
+
+div#progress-labels .progress-marker {
+  width: 23.3%;
+  display: inline-block;
+  text-align: right;
 }
 
 /*Other Stuff */
