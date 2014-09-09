@@ -9,7 +9,7 @@
 		  <label for="points" id="skill-progress">
   			<a href='/skill/<%= s.id %>'><%= s.name %> </a>
   		</label>
-		  <input type="range" name="skill-progress[<%= s.id %>]" id="skill-progress" value="<%= s.skills_users.find_by(user_id: current_user).skill_progress %>" min="0" max="3">
+		  <input type="range" name="skill_progress[<%= s.id %>]" id="skill-progress" value="<%= s.skills_users.find_by(user_id: current_user).skill_progress %>" min="0" max="3">
   </li>
   <% end %>
 </ul>

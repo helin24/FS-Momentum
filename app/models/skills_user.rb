@@ -5,8 +5,11 @@ class SkillsUser < ActiveRecord::Base
 
   def skill_progress
   	dated_progress = {"doable_on" => doable_on, "reliable_on" => reliable_on, "refined_on"=> refined_on}
-  	if dated_progress.values.count(nil) < dated_progress.size
-	  	case dated_progress.max_by { |k,v| v}
+  	dated_progress.select!{|k,v| v != nil}
+  	puts "returning number..."
+  	if dated_progress.size != 0
+  		puts "max is #{dated_progress.max_by { |k,v| v}}"
+	  	case dated_progress.max_by { |k,v| v}[0]
 	  	when "doable_on"
 	  		return 1
 	  	when "reliable_on"
