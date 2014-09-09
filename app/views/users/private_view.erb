@@ -9,7 +9,7 @@ Joined: <%= @user.created_at %><br><br>
   		<a href='/level/<%= level.id %>'><%= level.level %></a>
   	</div>
   	<div class="level-percent">
-  		<%= level.percent_complete %>
+  		<%= level.percent_complete(@user.id) %>%
   	</div>
   	<div class="level-bar">
   		<!-- Put progress marker here -->
