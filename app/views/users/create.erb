@@ -1,11 +1,15 @@
-<form action="/users/create" method="post" enctype="multipart/form-data">
-  <br>
-  Name: <input type="text", name="user[name]", value=""><br><br>
-  Email (required): <input type="text", name="user[email]", value=""><br><br>
-  Password (required): <input type="password", name="user[password]", value=""><br><br>
-  Re-enter password: <input type="password", name="reentered_password", value=""><br><br>
-  About: <input type="about", name="user[about]", value=""><br><br>
-  Birthday: <input type="date", name="user[birthday]", value=""><br><br>
-  Profile picture: <input type="file" name="filename"><br><br>
+<form class="user-info" action="/users/create" method="post" enctype="multipart/form-data">
+
+	Basic Info:
+  <input type="text" name="user[name]" value="" placeholder="Name">
+  <input type="text" name="user[email]" value="" placeholder="Email (Required)">
+  <input type="password" name="user[password]" value="" placeholder="Password (required)">
+  <input type="password" name="reentered_password" value="" placeholder="Re-enter password">
+  <input type="about" name="user[about]" value="" placeholder="About">
+  
+  Birthday: <input type="date" name="user[birthday]" value="">
+  
+  Profile picture: <input type="file" name="filename">
   <input type="submit" value="Create account">
+
 </form>

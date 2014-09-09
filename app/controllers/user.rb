@@ -63,3 +63,9 @@ get '/users/show/:id' do
   erb :'users/public_view'
 end
 
+# ------------ EDIT USER
+
+get '/users/edit' do
+  @user = current_user
+  erb :'/users/edit'
+end

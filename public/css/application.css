@@ -202,6 +202,15 @@ div#progress-labels .progress-marker {
   text-align: right;
 }
 
+/*User forms*/
+
+form.user-info input {
+  display: block;
+  margin: 0.5em;
+}
+
+
+
 /*Other Stuff */
 
 th {
