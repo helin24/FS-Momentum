@@ -2,13 +2,13 @@
 
 <h3>User Information</h3>
 <ul id="user-info">
-	<li>Email: <div class="editable" id="email"><%= @user.email %></div><a href="/users/edit/details" class="edit">Edit</a></li>
-	<li>Name: <div class="editable" id="name"><%= @user.name %></div><a href="/users/edit/details" class="edit">Edit</a></li>
-	<li>About: <div class="editable" id="about"><%= @user.about %></div><a href="/" class="edit">Edit</a></li>
-	<li>Birthday: <div class="editable" id="birthday"><%= @user.birthday %></div><a href="/" class="edit">Edit</a></li>
-	<li>Joined On: <%= "#{@user.created_at.month}/#{@user.created_at.day}/#{@user.created_at.year}" %></li>
+	<li>Email: <div class="editable" id="email"><%= @user.email %></div><a href="/users/edit/details" class="edit">(Edit)</a></li>
+	<li>Name: <div class="editable" id="name"><%= @user.name %></div><a href="/users/edit/details" class="edit">(Edit)</a></li>
+	<li>Birthday: <div class="editable" id="birthday"><%= @user.birthday %></div><a href="/" class="edit">(Edit)</a></li>
+	<li>About: <div class="editable" id="about"><%= @user.about %></div><a href="/" class="edit">(Edit)</a></li>
 
-	<li>Profile Photo: <div class="editable" id="photo"><img src="<%= @user.photos.first.file.url if @user.photos != [] %>"></div><a href="/" class="edit">Edit</a></li>
+	<li>Profile Photo: <div class="editable" id="photo"><img src="<%= @user.photos.first.file.url if @user.photos != [] %>"></div><a href="/" class="edit">(Edit)</a></li>
+	<li>Joined On: <%= "#{@user.created_at.month}/#{@user.created_at.day}/#{@user.created_at.year}" %></li>
 </ul>
 
 <a href="/users/edit"></a>

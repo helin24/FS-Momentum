@@ -217,7 +217,7 @@ form.user-form {
   text-align: center;
 }
 
-input.login-page {
+form.user-form input.login-page {
   display: inline-block;
   margin: 0 auto;
 }
@@ -231,7 +231,9 @@ form.user-form button {
 }
 
 form.user-info input {
-  display: inline-block;
+  display: block;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
 }
 
 
