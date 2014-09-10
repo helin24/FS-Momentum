@@ -70,12 +70,11 @@ get '/users/edit' do
   erb :'/users/edit'
 end
 
-get '/users/edit/?edit=:field' do
-  # puts params['edit'] = email
+get '/users/edit/details' do
   if request.xhr?
     @field = params['edit']
-    user_attribute = params['edit'].to_sym
-    @value = current_user.user_attribute
+    user_attribute = params['edit']
+    @value = current_user.select(user_attribute)
     erb :'/users/_edit_user_field', layout: false
   else
     # ???

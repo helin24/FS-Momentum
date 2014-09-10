@@ -7,6 +7,19 @@ class User < ActiveRecord::Base
 
   validates :email, :password, presence: true
 
+  def select(col_name)
+    case col_name
+    when 'name'
+      name
+    when 'email'
+      email
+    when 'about'
+      about
+    when 'birthday'
+      birthday
+    end
+  end
+
   include BCrypt
 
   def password

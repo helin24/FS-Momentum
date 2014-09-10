@@ -8,9 +8,14 @@ $(document).ready(function() {
 
 		var request = $.ajax(action, {"method": method, "data": data});
 		request.done(function(response) {
-			debugger;
 			console.log(response)
 			$(li_element).find("div.editable").html(response);
+			$(li_element).find("a.edit").attr('class', 'save').attr('href', '/users/edit/save').html('Save');
 		})
+	})
+
+	$("ul#user-info").on("click", "a.save", function(event) {
+		event.preventDefault();
+		
 	})
 })
