@@ -1,6 +1,6 @@
 <div class="login-message"><%= session[:login_error] || "" %></div>
 
-<form action='/users/login' method='post'>
+<form action='/users/login' method='post' class="user-form">
 	<input type='text' name='user[email]' value="" placeholder="Email">
   <input type='password' name='user[password]' value='' placeholder="Password">
   <input type='submit' value='Login' class="login-page">
