@@ -14,7 +14,8 @@
 
 <br>
 <form action="/skill/<%= @skill.id %>" method="post" id="add-note">
-  <input type="text" name="instructions" value="" placeholder="Note">
+  <input type="text" name="instructions[text]" value="" placeholder="Note">
+  <input type="text" name="instructions[source]" value="" placeholder="Link">
   <input type="checkbox" name="public" value="true">Make note public<br>
   <input type="submit" value="Add note">
 </form>

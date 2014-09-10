@@ -7,8 +7,10 @@ get '/skill/:id' do
   erb :'skills/index'
 end
 
+# ------------ NOTES
+
 post '/skill/:id' do
-  note = Note.create(text: params['instructions'])
+  note = Note.create(params['instructions'])
   note.publicness = params[:public] == nil ? 'no' : 'yes'
   note.user = User.find(session[:user_id])
   note.skill = Skill.find(params[:id])
