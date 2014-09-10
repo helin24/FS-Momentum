@@ -9,7 +9,7 @@ $(document).ready(function() {
 		var request = $.ajax(action, {"method": method, "data": data});
 		request.done(function(response) {
 			$(li_element).find("div.editable").html(response);
-			$(li_element).find("a.edit").attr('class', 'save').html('Save');
+			$(li_element).find("a.edit").attr('class', 'save').html('<button>Save</button>');
 		})
 	})
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		var request = $.ajax(action, {"method": method, "data": data});
 		request.done(function(response) {
 			$(li_element).find("div.editable").html(response);
-			$(li_element).find("a.save").attr('class', 'edit').html('Edit');
+			$(li_element).find("a.save").attr('class', 'edit').html('(Edit)');
 		})
 	})
 })

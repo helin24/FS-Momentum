@@ -77,7 +77,8 @@ get '/users/edit/details' do
     @value = current_user.select(user_attribute)
     erb :'/users/_edit_user_field', layout: false
   else
-    # ??? Open up entire edit form?
+    @user = current_user
+    erb :'/users/edit_all'
   end
 end
 

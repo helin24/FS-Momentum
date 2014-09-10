@@ -217,13 +217,40 @@ form.user-form {
   text-align: center;
 }
 
-input.login-page {
+form.user-form input.login-page {
   display: inline-block;
   margin: 0 auto;
 }
 
 div.login-message {
   text-align: center;
+}
+
+form.user-form button {
+  display: inline-block;
+}
+
+form.user-info input {
+  display: block;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+
+/*User Edit*/
+
+ul#user-info {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul#user-info li {
+  padding-bottom: 0.5em;
+}
+
+ul#user-info div {
+  display: inline-block;
+  padding-right: 0.5em;  
 }
 
 /*Other Stuff */
