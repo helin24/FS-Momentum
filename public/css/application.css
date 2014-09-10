@@ -178,6 +178,7 @@ ul#skills-list {
 label#skill-progress {
   padding: 0.5em;
   display: inline-block;
+  vertical-align: top;
   width: 20%;
 }
 
@@ -204,13 +205,13 @@ div#progress-labels .progress-marker {
 
 /*User forms*/
 
-form input {
+form.user-form input {
   display: block;
   margin: 0 auto;
   margin-bottom: 0.5em;
 }
 
-form {
+form.user-form {
   margin: 0 auto;
   display: block;
   text-align: center;
