@@ -1,12 +1,14 @@
-<%= session[:login_error] || "" %>
+<div class="login-message"><%= session[:login_error] || "" %></div>
 
 <form action='/users/login' method='post'>
-  <br>
-  Email: <input type='text' name='user[email]' value="">
-  <br><br>
-  Password: <input type='password' name='user[password]' value=''>
-  <br><br>
-  <input type='submit' value='Login'>
+	<input type='text' name='user[email]' value="" placeholder="Email">
+  <input type='password' name='user[password]' value='' placeholder="Password">
+  <input type='submit' value='Login' class="login-page">
+  <a href="/users/create"><button type="button">Create Account</button></a>
 </form>
 
-<a href='/users/create'>Create an account!</a>
+
+<!-- <form action='/users/create' method="get">
+	<input type='submit' value='Create Account' class='login-page'>
+</form>
+ -->

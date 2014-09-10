@@ -204,12 +204,26 @@ div#progress-labels .progress-marker {
 
 /*User forms*/
 
-form.user-info input {
+form input {
   display: block;
-  margin: 0.5em;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
 }
 
+form {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
 
+input.login-page {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+div.login-message {
+  text-align: center;
+}
 
 /*Other Stuff */
 
