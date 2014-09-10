@@ -77,6 +77,16 @@ get '/users/edit/details' do
     @value = current_user.select(user_attribute)
     erb :'/users/_edit_user_field', layout: false
   else
+    # ??? Open up entire edit form?
+  end
+end
+
+put '/users/edit/details' do 
+  if request.xhr?
+    # puts params {edit: name, value; Helin}
+    current_user.edit_value(params['edit'], params['value'])
+    params['value']
+  else 
     # ???
   end
 end

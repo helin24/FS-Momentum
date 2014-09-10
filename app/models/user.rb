@@ -20,6 +20,20 @@ class User < ActiveRecord::Base
     end
   end
 
+  def edit_value(col_name, new_val)
+    case col_name
+    when 'name'
+      self.name = new_val
+    when 'email'
+      self.email = new_val
+    when 'about'
+      self.about = new_val
+    when 'birthday'
+      self.birthday = new_val
+    end
+    self.save
+  end
+
   include BCrypt
 
   def password
