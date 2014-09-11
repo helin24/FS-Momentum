@@ -24,4 +24,12 @@ $(document).ready(function() {
     })
   })
 
+  $(".edit").on("click", function(event) {
+    event.preventDefault();
+
+    var action = $(this).attr("href");
+    var method = "put";
+    
+  })
+
 });
