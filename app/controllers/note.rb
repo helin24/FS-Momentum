@@ -21,13 +21,21 @@ delete '/skill/:id' do
   end
 end
 
+# get 'skill/:id/delete' do
+#   note = Note.find(params[:id])
+#   note.destroy
+#   redirect "/skill/#{params[:id]}"
+# end
+# This might be not working because id in route is skill url
+
 get '/note/:id/edit' do
   if request.xhr?
-    
+
   end
 end
 
 put '/note/:id/edit' do 
   if request.xhr?
+
   end
 end

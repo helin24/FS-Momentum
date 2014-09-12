@@ -1,5 +1,6 @@
-<li>
-  <%= n.text %> 
-  <a href="/skill/<%= n.skill_id %>" class="edit" id="<%= n.id %>">(Edit)</a>
-  <a href="/skill/<%= n.skill.id %>" class="delete" id="<%= n.id %>">(Delete)</a>
+<li class="skill-note">
+  <%= n.text %>
+  <a href="<%= n.source %>"><%= n.source %></a>
+  <a href="/skill/<%= n.skill_id %>/edit" class="edit" id="<%= n.id %>">(Edit)</a>
+  <a href="/skill/<%= n.skill.id %>/delete" class="delete" id="<%= n.id %>">(Delete)</a>
 </li>

@@ -24,12 +24,13 @@ $(document).ready(function() {
     })
   })
 
-  $(".edit").on("click", function(event) {
+  $(".skill-note").on("click", "a.edit" function(event) {
     event.preventDefault();
 
     var action = $(this).attr("href");
-    var method = "put";
-    
+    var method = "get";
+
+
   })
 
 });

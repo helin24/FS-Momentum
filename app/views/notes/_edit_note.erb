@@ -1,1 +1,9 @@
-<input type="text" name="<%= @field %>" value="<%= @value %>">
+<li class="edit-skill-note">
+	<form action="/note/<%= n.id %>/edit" method="post">
+		<input type="hidden" name="_method" value="put">
+		<input type="text" name="note[text]" value="<%= n.text %>" placeholder="Note">
+		<input type="text" name="note[link]" value="<%= n.link %>" placeholder="Link">
+	  <input type="checkbox" name="public" value="<%= n.publicness %>">Make note public
+	  <input type="submit" value="Edit note">
+
+</li>
